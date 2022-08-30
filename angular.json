@@ -23,7 +23,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node-modules/bootstrap/dist/min/css/bootstrap.mis.css",
+              "node-modules/@forawsome/fontawesome-free/css/all.mine.css"
             ],
             "scripts": []
           },
