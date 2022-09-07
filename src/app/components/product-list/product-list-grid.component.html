@@ -1,0 +1,22 @@
+<div class ="main-content">
+    <div class = "section-content section-content-p30">
+        <div class ="container-fluid">
+            <div class ="row">
+
+                <div *ngFor ="let tempProd of products" class ="col-md-3">
+                    <div class = "product-box">
+                        <img src ="{{tempProd.imageUrl}}" class ="img-responsive"/>
+                        <h1>{{tempProd.name}}</h1>
+                        <div class ="price">{{tempProd.unitPrice | currency :'EUR'}}</div>
+                        <a hreg ="#" class ="primary-btn">Add to card</a>
+                    </div>
+                </div>
+                <!--if product is empty  ==> display a message -->
+                <!--products?.length == 0 ==> if(products is null/undefine) or (products.length == 0) -->
+                <div *ngIf ="products?.length == 0" class="alert alert-warning col-md-12" role="alert">
+                    No products found.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

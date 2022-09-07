@@ -1,0 +1,11 @@
+<div class="form-header">
+    <!--#myInput used to read tne input and pass it to the functuon doSearch
+        keyup.enter is used to do search in hitting enter -->
+    <input  #myInput type="text"  
+            placeholder="Search for data ..."
+            class="au-input au-input-xl"  
+            (keyup.enter)="doSearch(myInput.value)" />
+    <button (click)="doSearch(myInput.value)" class="au-btn-submit" >
+      Search
+    </button>
+</div>
